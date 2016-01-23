@@ -1,0 +1,14 @@
+{application, oauth2,
+ [{description, "OAuth 2 for CouchDB"},
+  {vsn, git},
+  {registered, [oauth2]},
+  {applications,
+   [kernel,
+    stdlib,
+    config,
+    couch,
+    couch_log,
+    couch_epi]},
+%  {mod, {oauth2_app, []}},
+  {env, []}
+ ]}.
